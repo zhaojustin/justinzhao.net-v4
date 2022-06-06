@@ -2,11 +2,18 @@ import React from "react";
 import { ReactTerminal } from "react-terminal";
 
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 
 export default function Terminal() {
   const commands = {
-    help: "help, projects, photos, yummy, contact",
+    help: (
+      <div>
+        <p>help - lists the available commands</p>
+        <p>projects - see the projects i've worked on</p>
+        <p>photography - view my portfolio</p>
+        <p>yummy - my food/drink recs</p>
+        <p>contact - get in touch with me!</p>
+      </div>
+    ),
     cd: (directory) => `changed path to ${directory}`,
   };
 

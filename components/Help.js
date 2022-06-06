@@ -7,7 +7,6 @@ import Grid from "@mui/material/Grid";
 export default function Help() {
   return (
     <Box>
-      <Typography variant="h6">commands:</Typography>
       <Box sx={{ pt: 3 }}>
         <Grid container>
           {/* LEFT */}

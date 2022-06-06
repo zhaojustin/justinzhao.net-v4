@@ -38,10 +38,17 @@ export default function Bio() {
         </Box>
       </Stack>
 
-      <Box sx={{ pt: 5 }}>
-        <Typography>
-          Type 'help' in the console to see the available commands.
+      <Box sx={{ pt: 7 }}>
+        <Typography variant="body1">
+          Type '<strong>help</strong>' in the console to get started!
         </Typography>
+
+        <Box sx={{ pt: { xs: 3, sm: 0 } }}>
+          <Typography variant="body2">
+            or, you can <strong>scroll down</strong> to see the available
+            commands.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
