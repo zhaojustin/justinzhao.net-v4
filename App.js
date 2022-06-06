@@ -1,21 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { TerminalContextProvider } from "react-terminal";
+
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import "./styles.css";
+
+import Container from "@mui/material/Container";
+
+import Wrapper from "./components/Wrapper";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Roboto Mono",
+  },
+});
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Container maxWidth="md">
+      <ThemeProvider theme={theme}>
+        <TerminalContextProvider>
+          <Wrapper />
+        </TerminalContextProvider>
+      </ThemeProvider>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
