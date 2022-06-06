@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "justinzhao.net-v4",
+    "slug": "justinzhao.net-v4",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
