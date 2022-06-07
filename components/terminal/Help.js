@@ -13,6 +13,7 @@ export default function Help() {
           <Grid item xs={3}>
             <Box>
               <Typography variant="body2">help</Typography>
+              <Typography variant="body2">about</Typography>
               <Typography variant="body2">projects</Typography>
               <Typography variant="body2">photos</Typography>
               <Typography variant="body2">yummy</Typography>
@@ -23,6 +24,7 @@ export default function Help() {
           <Grid item xs={9}>
             <Box>
               <Typography variant="body2">see available commands</Typography>
+              <Typography variant="body2">learn a bit more about me</Typography>
               <Typography variant="body2">projects i've worked on</Typography>
               <Typography variant="body2">my photography portfolio</Typography>
               <Typography variant="body2">food/drink recs</Typography>

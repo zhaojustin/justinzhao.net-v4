@@ -15,12 +15,14 @@ export default function Terminal() {
     help: (
       <div>
         <p>help - lists the available commands</p>
+        <p>about - learn a bit more about me</p>
         <p>projects - see the projects i've worked on</p>
         <p>photos - view my photography portfolio</p>
         <p>yummy - my food/drink recs</p>
         <p>contact - get in touch with me!</p>
       </div>
     ),
+    about: () => navigate("about"),
     projects: () => navigate("projects"),
     photos: () => navigate("photos"),
     yummy: () => navigate("yummy"),

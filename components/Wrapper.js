@@ -10,6 +10,7 @@ import Projects from "./Projects";
 import Photos from "./Photos";
 import Yummy from "./Yummy";
 import Contact from "./Contact";
+import About from "./About";
 
 export default function Wrapper() {
   return (
@@ -24,6 +25,7 @@ export default function Wrapper() {
       </Box>
       <Routes>
         <Route path="/" element={<Terminal />} />
+        <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="photos" element={<Photos />} />
         <Route path="yummy" element={<Yummy />} />
