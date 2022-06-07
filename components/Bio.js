@@ -5,15 +5,14 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 import ProfilePicture from "../assets/profilepicture.JPG";
-import { YellowBox } from "react-native";
 
 export default function Bio() {
   return (
     <Box>
       <Stack
-        direction={{ xs: "column", md: "row" }}
-        alignItems={{ xs: "start", md: "center" }}
-        spacing={{ xs: 2, md: 7 }}
+        direction={{ xs: "column", sm: "row" }}
+        alignItems={{ xs: "start", sm: "center" }}
+        spacing={{ xs: 2, sm: 7 }}
       >
         {/* Profile Picture */}
         <Box>
@@ -38,16 +37,18 @@ export default function Bio() {
         </Box>
       </Stack>
 
-      <Box sx={{ pt: 7 }}>
+      <Box sx={{ pt: 6 }}>
         <Typography variant="body1">
           Type '<strong>help</strong>' in the console to get started!
         </Typography>
 
         <Box sx={{ pt: { xs: 3, sm: 0 } }}>
-          <Typography variant="body2">
-            or, you can <strong>scroll down</strong> to see the available
-            commands.
-          </Typography>
+          <Box sx={{ fontStyle: "italic" }}>
+            <Typography variant="body1">
+              or, you can <strong>scroll down</strong> to see the available
+              commands.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>
