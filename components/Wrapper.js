@@ -5,22 +5,22 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 
 import Bio from "./Bio";
-import Terminal from "./terminal/Terminal";
+import Terminal from "./Terminal/Terminal";
 import Projects from "./Projects";
 import Photos from "./Photos";
 import Yummy from "./Yummy";
 import Contact from "./Contact";
-import About from "./About";
+import About from "./About/About";
 
 export default function Wrapper() {
   return (
     <Box>
       {/*  BIO  */}
-      <Box sx={{ pt: 5, pb: 3 }}>
+      <Box sx={{ pt: 4, pb: 3 }}>
         <Bio />
       </Box>
       {/*  OUTLET  */}
-      <Box sx={{ pt: 3, pb: 3 }}>
+      <Box sx={{ pb: 3 }}>
         <Outlet />
       </Box>
       <Routes>

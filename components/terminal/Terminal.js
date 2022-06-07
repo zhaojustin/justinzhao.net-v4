@@ -5,6 +5,7 @@ import { ReactTerminal } from "react-terminal";
 import { useNavigate } from "react-router-dom";
 
 import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 import Help from "./Help";
 
@@ -33,6 +34,23 @@ export default function Terminal() {
 
   return (
     <Box>
+      {/* INSTRUCTIONS */}
+      <Box sx={{ pb: 5 }}>
+        <Typography variant="body1">
+          Type '<strong>help</strong>' in the console to get started!
+        </Typography>
+
+        <Box sx={{ pt: { xs: 3, sm: 1 } }}>
+          <Box sx={{ fontStyle: "italic" }}>
+            <Typography variant="body1">
+              or, you can <strong>scroll down</strong> to see the available
+              commands.
+            </Typography>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* TERMINAL */}
       <Box
         sx={{
           height: 450,
