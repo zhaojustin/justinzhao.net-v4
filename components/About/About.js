@@ -21,6 +21,8 @@ export default function About() {
           <Typography sx={{ pl: 1 }}>Back</Typography>
         </Button>
 
+        <Box sx={{ pt: 1 }}></Box>
+
         <CustomTimeline />
       </Box>
     </Fade>

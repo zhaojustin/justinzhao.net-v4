@@ -17,6 +17,7 @@ import PeratonLogo from "../../assets/timeline/peraton.png";
 import PolytureLogo from "../../assets/timeline/polyture.png";
 import TsmLogo from "../../assets/timeline/tsm.png";
 import FlpLogo from "../../assets/timeline/flp.jpeg";
+import SternLogo from "../../assets/timeline/stern.jpeg";
 
 export default function CustomTimeline() {
   return (
@@ -72,24 +73,24 @@ export default function CustomTimeline() {
           </TimelineContent>
         </TimelineItem>
 
-        {/* 2017 - First game */}
+        {/* 2016 - Started high school */}
 
         <TimelineItem>
           <TimelineOppositeContent color="text.secondary">
-            2017
+            2016
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography>Programmed first game</Typography>
+            <Typography>Started High School</Typography>
             <Typography
               variant="subtitle2"
               color="text.secondary"
               sx={{ mb: 5 }}
             >
-              Plants vs. Zombies using LibGDX Java library
+              Fullerton, CA
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -134,7 +135,7 @@ export default function CustomTimeline() {
           </TimelineContent>
         </TimelineItem>
 
-        {/* 2020 - Polyture */}
+        {/* 2020 - NYU Stern */}
 
         <TimelineItem>
           <TimelineOppositeContent color="text.secondary">
@@ -152,6 +153,37 @@ export default function CustomTimeline() {
               justifyContent="flex-end"
               alignItems="flex-end"
             >
+              <Box sx={{ width: { xs: "100%", sm: 250 } }}>
+                <img src={SternLogo} width="100%" />
+              </Box>
+
+              <Box sx={{ pl: 1, mb: 5, width: "100%" }}>
+                {/* HEADING */}
+                <Typography sx={{ mt: 1 }}>B.S. Finance</Typography>
+                <Typography>B.A. Computer Science</Typography>
+
+                {/* LOCATION */}
+                <Typography sx={{ mb: 1 }} variant="subtitle2">
+                  New York, NY
+                </Typography>
+              </Box>
+            </Stack>
+          </TimelineContent>
+        </TimelineItem>
+
+        {/* 2020 - Polyture */}
+
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            2020
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+            {/* CONTENT */}
+            <Stack>
               <Box sx={{ width: { xs: "100%", sm: 175 } }}>
                 <img src={PolytureLogo} width="100%" />
               </Box>
@@ -183,7 +215,7 @@ export default function CustomTimeline() {
 
         <TimelineItem>
           <TimelineOppositeContent color="text.secondary">
-            2021
+            2020
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
@@ -191,7 +223,12 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             {/* CONTENT */}
-            <Stack direction="column">
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="flex-end"
+              alignItems="flex-end"
+            >
               <Box sx={{ width: { xs: "100%", sm: 125 } }}>
                 <img src={TsmLogo} width="100%" />
               </Box>
@@ -209,13 +246,10 @@ export default function CustomTimeline() {
 
                 {/* DESCRIPTION */}
                 <Typography variant="subtitle2" color="text.secondary">
-                  - actively managed Chinese social media
+                  - managed official Chinese social media
                 </Typography>
                 <Typography variant="subtitle2" color="text.secondary">
-                  - researched global esports industry trends
-                </Typography>
-                <Typography variant="subtitle2" color="text.secondary">
-                  - live translator for League of Legends team
+                  - researched esports industry trends
                 </Typography>
               </Box>
             </Stack>
@@ -234,12 +268,7 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             {/* CONTENT */}
-            <Stack
-              direction="column"
-              display="flex"
-              justifyContent="flex-end"
-              alignItems="flex-end"
-            >
+            <Stack>
               <Box sx={{ width: { xs: "100%", sm: 150 } }}>
                 <img src={FlpLogo} width="100%" />
               </Box>
@@ -282,7 +311,12 @@ export default function CustomTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             {/* CONTENT */}
-            <Stack direction="column">
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="flex-end"
+              alignItems="flex-end"
+            >
               <Box sx={{ width: { xs: "100%", sm: 175 } }}>
                 <img src={MoodysLogo} width="100%" />
               </Box>
